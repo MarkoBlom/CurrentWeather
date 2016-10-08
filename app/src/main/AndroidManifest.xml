@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aalto.solutions.currentweather">
+
+    <!-- For downloading weather data from OpenWeatherOrg server -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.aalto.solutions.framework.ui.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Just one Activity : Enter your city and results are shown here too -->
+        <activity
+            android:name=".ui.EnterCityActivity"
+            android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>
